@@ -1,0 +1,27 @@
+GET http://localhost:8080/ai/chat?
+    message=Tell me a joke
+
+<> 2026-09-13T101641.200.txt
+<> 2026-09-13T101615.200.txt
+<> 2026-09-13T101423.500.json
+<> 2026-09-13T101323.500.json
+
+### post mapping chat
+POST http://localhost:8080/ai/chat
+Content-Type: application/json
+
+{
+    "prompt": "Tell me Pj"
+}
+
+### streaming chat
+GET http://localhost:8080/ai/stream?
+    prompt=what is docker
+
+### entire chat response
+GET http://localhost:8080/ai/chatresponse?
+    prompt="Tell me lame joke"
+
+
+### json response
+GET http://localhost:8080/ai/genEn
